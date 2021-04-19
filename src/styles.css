@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.btn:active, .btn:visited {
+  box-shadow: inset 0 1px 1px rgba(54, 0, 0, 0.041), 0 0 4px rgba(255, 0, 0, 0.753) !important;
+}
+
+.form-control:focus{
+  border-color:#ff7f50c9;
+  box-shadow: inset 0 1px 1px rgba(54, 0, 0, 0.041), 0 0 5px rgba(255, 0, 0, 0.459);
+}
+
+.btn-primary{
+  background-color: coral;
+  border-color: #FF7F50;
+  outline: none;
+  box-shadow: none;
+  border:none;
+}
+
+.btn-primary:hover{
+  background-color: coral;
+  box-shadow: inset 0 1px 1px rgba(54, 0, 0, 0.041), 0 0 8px rgba(255, 0, 0, 0.459);
+  outline: none;
+  border:none;
+}
+
+.btn-primary:focus{
+  background-color: coral;
+}
+
+.btn-primary:active, .btn-primary:visited {
+  background-color: rgb(252, 96, 39);
+}
+
+
