@@ -1,4 +1,4 @@
-<h2>Template: Basicos</h2>
+<h2>Template: <small>Basicos</small></h2>
 <hr>
 
 <div class="row">
@@ -13,7 +13,7 @@
 
           <input type="text"
                  class= "form-control"
-                 ngModel
+                 [ngModel]="initForm.producto"
                  name="producto"
                  placeholder="Nombre de producto"
                  required
@@ -30,7 +30,7 @@
         <div class="col-sm-9">
           <input type="number"
                  class= "form-control"
-                 ngModel
+                 [ngModel]="initForm.precio"
                  name="precio"
                  placeholder="Precio del producto"
                  required>
@@ -46,13 +46,13 @@
         <div class="col-sm-9">
           <input type="number"
                  class= "form-control"
-                 ngModel
+                 [ngModel]="initForm.existencias"
                  name="existencias"
-                 placeholder="Existencias del producto">
-          <span *ngIf="existenciaValida()"
-                class="form-text text-danger">
-                No puede ser menor a cero
-          </span>
+                 customMin
+                 [minimo]="0"
+                 placeholder="Existencias del producto"
+                 required>
+
         </div>
       </div>
 
@@ -70,18 +70,4 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="col">
-    <span>Valid</span>
-    <pre>{{ miFormulario.valid }}</pre>
 
-    <span>Pristine</span>
-    <pre>{{ miFormulario.pristine }}</pre>
-
-    <span>Touched</span>
-    <pre>{{ miFormulario.touched }}</pre>
-
-    <span>Value</span>
-    <pre>{{ miFormulario.value | json }}</pre>
-  </div>
-</div>
