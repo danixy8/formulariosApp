@@ -4,11 +4,7 @@ import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-basicos',
   templateUrl: './basicos.component.html',
-  styles: [`
-  button, button:disabled{
-    color: #fff;
-  }
-  `]
+  styles: []
 })
 export class BasicosComponent implements OnInit {
 

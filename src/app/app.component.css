@@ -1,0 +1,15 @@
+div .col {
+  padding-top: 2.5625rem;
+}
+
+@media (max-width: 992px){
+  div .col {
+    padding-top: 3.875rem;
+  }
+}
+
+@media (max-width: 768px){
+  div .col {
+    padding-top: 3rem;
+  }
+}

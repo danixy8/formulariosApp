@@ -1,0 +1,28 @@
+li{
+  cursor: pointer;
+};
+
+header{
+  text-align: center
+}
+
+.logotipo{
+  object-fit: cover;
+  height: 5rem;
+  width: 100%;
+}
+
+@media (max-width: 992px){
+  .logotipo{
+    object-fit: cover;
+    height: 6rem;
+    width: 100%;
+  }
+}
+@media (max-width: 768px){
+  .logotipo{
+      object-fit: cover;
+      height: 5rem;
+      width: 100%;
+  }
+}

@@ -12,9 +12,7 @@ interface Favorito{
 @Component({
   selector: 'app-dinamicos',
   templateUrl: './dinamicos.component.html',
-  styles: [`
-  .col-sm-12 > button{color: #fff}
-  `]
+  styles: []
 })
 export class DinamicosComponent{
   @ViewChild ('formularioDinamico') formulario!: NgForm;
